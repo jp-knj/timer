@@ -6,7 +6,10 @@
   "author": "kenji",
   "license": "MIT",
   "scripts": {
-    "watch:build": "webpack -w"
+    "watch:build": "webpack -w",
+    "watch:server": "nodemon dist/server.js",
+    "dev": "npm-run-all --parallel watch:*",
+    "start": "node dist/server.js"
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
